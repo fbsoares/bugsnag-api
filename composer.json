@@ -1,0 +1,21 @@
+{
+    "name": "outdare/bugsnag-api",
+    "description": "Bugsnag Data access API PHP Client",
+    "keywords": ["bugsnag", "data-access", "api","client"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Francisco Bruno Soares",
+            "email": "francisco.soares@outdare.pt",
+	          "homepage": "http://outdare.pt"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Outdare\\Bugsnag\\": "src/"
+        }
+    },
+    "require": {
+	       "nategood/httpful": "*"
+    }
+}
