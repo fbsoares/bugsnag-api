@@ -4,7 +4,7 @@
 
 ```json
 "require": {
-    "outdare/bugsnag-api":"dev-bugsnag-v1@dev"
+    "outdare/bugsnag-api":"1.0.1"
 },
 ```
 
