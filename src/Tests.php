@@ -39,5 +39,6 @@ class Tests {
     // $project->delete('5825b594f1f70e5bf14a4c92');
     // $response = $project->getDetails('5825b594f1f70e5bf14a4c92');
     // Log::info($response);
+
   }
 }
