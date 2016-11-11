@@ -24,7 +24,7 @@ $response = $accounts->all();
 
 ## With some help
 
-Thanks to Nate Good package ***nategood/httpful*** that makes the use of cUrl pretty simple.
+Thanks to Nate Good's package ***nategood/httpful*** that makes the use of cUrl pretty simple.
 http://phphttpclient.com/
 
 ## Contributions
