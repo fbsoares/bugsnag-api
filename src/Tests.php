@@ -1,26 +1,43 @@
-<?php namespace Outdare\Confluence;
+<?php namespace Outdare\Bugsnag;
 use Log;
 class Tests {
 
   public function callClient()
   {
-    Log::info("Creating Space");
+    //577b7938e694aa6f05084d95
+    //577b7938e694aa6f05084d98
+
     $client = new Client([
-      'hostname' => 'etdare.atlassian.net',
-      'user' => 'admin',
-      'pass' => 'Coentros1'
+      'auth_type' => 'user',
+      'user' => 'francisco.soares@etnos.co',
+      'pass' => 'gthyjuFRki!337'
     ]);
 
-    // $space = new Space($client);
-    // $response = $space->create("TEST-BOT","Space Test for bot","global","New space test created by outdare bot");
-    // $response = $space->all();
+    // $account = new Account($client);
+    // $response = $account->all();
+    // Log::info($response);
     //
-    $page = new Page($client);
-    // $response = $page->create("DEVOPS","Pagina de teste [OUTDAREBOT]","<p>Pagina automaticamente criada pelo bot outdare</p>");
-    //11567111
-    // $response = $page->createChild("DEVOPS",'11567111',"Test child","Uma child criada pelo outdare bot");
-    // $response = $page->delete("11567112");
-    $response = $page->search("Pagina updated", "DEVOPS");
-    Log::info($response);
+    // $response = $account->current();
+    // Log::info($response);
+    //
+    // $response = $account->get('577b7938e694aa6f05084d98');
+    // Log::info($response);
+
+    $project = new Project($client);
+    // $response = $project->byAccount('577b7938e694aa6f05084d95');
+    // Log::info($response);
+    //
+    // $response = $project->getDetails('58205fffbbddbd5005915c1b');
+    // Log::info($response);
+
+    // $response = $project->create('577b7938e694aa6f05084d95',"outdare bot test","laravel");
+    // Log::info($response);
+
+    // $response = $project->update('5825b594f1f70e5bf14a4c92','outdare bot test updated',"laravel");
+    // Log::info($response);
+
+    // $project->delete('5825b594f1f70e5bf14a4c92');
+    // $response = $project->getDetails('5825b594f1f70e5bf14a4c92');
+    // Log::info($response);
   }
 }

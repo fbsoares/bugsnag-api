@@ -26,7 +26,7 @@ class Project {
   public function getDetails($project_id)
   {
     $uri = "/projects/".$project_id;
-    $response = $this->client->callGet($project_id);
+    $response = $this->client->callGet($uri);
     return $response;
   }
 

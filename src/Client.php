@@ -2,7 +2,7 @@
 use Log;
 class Client {
 
-  private $host = 'https://api.bugsnag.com';
+  private $host = 'api.bugsnag.com';
 
   private $user = null;
   private $pass = null;
