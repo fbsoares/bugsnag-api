@@ -1,11 +1,14 @@
 ## API calls
 
-1. [ ] Projects by account
-2. [ ] Projects by user
-3. [ ] Project details
-4. [ ] Project create
-5. [ ] Project update
-6. [ ] Project delete
+1. [x] Projects by account
+2. [x] Projects by user
+3. [x] Project details
+4. [x] Project create
+5. [x] Project update
+6. [x] Project delete
+8. [x] Accounts
+9. [x] Account current
+10. [x] Account by id
 
 
 ## Library

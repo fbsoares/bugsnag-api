@@ -10,20 +10,21 @@
 
 ## Examples
 
-### Creating Project
+### List all accounts
 ```php
 <?php
-$var = true;
+$client = new Client([
+  'auth_type' => 'user',
+  'user' => '<your_email>',
+  'pass' => '<your_password'
+]);
+$accounts = new Account($client);
+$response = $accounts->all();
 ```
-
-## Possible methods
-
-* Project
-  * ```$project->create(); ```
 
 ## With some help
 
-Thanks to Nate Good package ***nategood/httpful*** that makes the use of cUrl pretty simple.
+Thanks to Nate Good's package ***nategood/httpful*** that makes the use of cUrl pretty simple.
 http://phphttpclient.com/
 
 ## Contributions
